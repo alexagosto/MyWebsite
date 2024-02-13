@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 
-const paintings = ['../../src/components/art/1.png', '../../src/components/art/2.png', '../../src/components/art/3.png', '../../src/components/art/4.png', '../../src/components/art/5.png',
-  '../../src/components/art/6.png', '../../src/components/art/7.png',];
+const paintings = ['/1.png', '/2.png', '/3.png', '/4.png', '/5.png',
+  '/6.png', '/7.png',];
 const currentPainting = ref(paintings[0]);
 let currentIndex = 0;
 
