@@ -2,7 +2,7 @@
   <div class="resume-container">
     <img src="../../src/components/resume/resume.png" alt="My Resume" class="resume-image"/>
     <div class="download-container">
-      <a href="/resume.pdf" download="resume.pdf" class="download-link">Download My Resume (PDF)</a>
+      <a href="/resume.pdf" download="alex_agosto_resume.pdf" class="download-link">Download My Resume (PDF)</a>
     </div>
   </div>
 </template>
