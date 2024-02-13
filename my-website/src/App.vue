@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue';
+import {RouterLink, RouterView} from 'vue-router'
+import {ref} from 'vue';
 // Reactive state to track if the mobile menu is open
 const isMobileMenuOpen = ref(false);
 // Method to toggle the mobile menu state
@@ -14,36 +14,39 @@ const hideMobileMenu = () => {
 
 <template>
   <div id="app">
-    <nav class ="navbar">
+    <nav class="navbar">
       <div class="logo-container">
         <a href="https://github.com/alexagosto" class="logo-link">
           <img src="../src/components/icons/github.png" alt="Github-logo" class="github-logo"/>
           <span class="tooltip-text">Check Out My Github!</span>
         </a>
-        <a href="https://drive.google.com/drive/u/1/folders/15o6KttUqmFIo-jqZ0weBKwJHDJX4rW5m" class ="logo-link">
-          <img src="../src/components/icons/art_holder.png" alt="Art-Logo" class="art-logo"/>
-          <span class="tooltip-text">Check Out My Paintings!</span>
-        </a>
       </div>
       <div class="name">
         <h1>Alex Y. Agosto Figueroa</h1>
       </div>
-      <button class="mobile-nav-toggle" @click="toggleMobileMenu" aria-controls="primary-navigation" :aria-expanded="isMobileMenuOpen.toString()">
+      <button class="mobile-nav-toggle" @click="toggleMobileMenu" aria-controls="primary-navigation"
+              :aria-expanded="isMobileMenuOpen.toString()">
         <span class="sr-only"></span>
       </button>
       <ul :class="{'primary-navigation': true, 'active': isMobileMenuOpen}">
-        <li><router-link to="/about" @click="hideMobileMenu">About</router-link></li>
-        <li><router-link to="/resume" @click="hideMobileMenu">Resume</router-link></li>
-        <li><router-link to="/contacts" @click="hideMobileMenu">Contacts</router-link></li>
+        <li>
+          <router-link to="/about" @click="hideMobileMenu">About</router-link>
+        </li>
+        <li>
+          <router-link to="/resume" @click="hideMobileMenu">Resume</router-link>
+        </li>
+        <li>
+          <router-link to="/contacts" @click="hideMobileMenu">More!</router-link>
+        </li>
       </ul>
     </nav>
-    <RouterView />
+    <RouterView/>
   </div>
 </template>
 
 
 <style scoped>
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +55,7 @@ const hideMobileMenu = () => {
   color: #F5F0F6;
 }
 
-.name{
+.name {
   font-size: 20px;
   margin-left: 100px;
   align-self: center;
@@ -65,22 +68,18 @@ const hideMobileMenu = () => {
   gap: 10px;
 }
 
-.github-logo{
+.github-logo {
   width: 40px;
   height: auto;
 }
 
-.art-logo{
-  width: 50px;
-  height: auto;
-}
 
 .logo-link {
   position: relative;
   display: inline-block;
 }
 
-.tooltip-text{
+.tooltip-text {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -106,7 +105,7 @@ const hideMobileMenu = () => {
   opacity: 1;
 }
 
-.primary-navigation{
+.primary-navigation {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -120,42 +119,36 @@ const hideMobileMenu = () => {
 }
 
 /*mobile nav style */
-.mobile-nav-toggle{
+.mobile-nav-toggle {
   background: none;
   display: none;
   border: none;
   cursor: pointer;
 }
 
-.mobile-nav-toggle:before{
+.mobile-nav-toggle:before {
   content: '☰';
   color: #fff;
   font: 20px "Fira Sans", sans-serif;
 }
 
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     position: relative;
   }
 
-  .name{
+  .name {
     margin-left: 1px;
     font: 12px "Fira Sans", sans-serif;
   }
 
-  .github-logo{
+  .github-logo {
     margin-top: 0;
     width: 20px;
     height: auto;
   }
 
-  .art-logo{
-    margin-top: 10px;
-    width: 25px;
-    height: auto;
-  }
-
-  .primary-navigation{
+  .primary-navigation {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -166,11 +159,11 @@ const hideMobileMenu = () => {
     z-index: 10;
   }
 
-  .primary-navigation.active{
+  .primary-navigation.active {
     display: flex;
   }
 
-  .mobile-nav-toggle{
+  .mobile-nav-toggle {
     display: block;
     background: none;
     border: none;
@@ -209,7 +202,7 @@ nav ul li a {
   display: block;
 }
 
-nav ul li a.router-link-active{
+nav ul li a.router-link-active {
   color: #8E94F2;
 }
 </style>

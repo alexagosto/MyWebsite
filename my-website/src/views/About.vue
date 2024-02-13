@@ -14,8 +14,8 @@
         skills and learn how to apply abilities learnt in projects and jobs to new workforce areas.
         I hold a passion in backend and game development; and have tried my hand in machine learning and frontend recently,
         leading to new interests.</p>
-      <p2>Some of my other hobbies include playing instruments, learning languages (currently learning german), and painting.
-        I've provided a link to my most recent paintings as an icon to the right of my github profile in the navigation bar; feel free to check it out!</p2>
+      <p>Some of my other hobbies include playing instruments, learning languages (currently learning german), and painting.
+        I've provided a couple of my most recent paintings in the "More!" section, feel free to check it out!</p>
       </div>
     </div>
   </div>
@@ -51,6 +51,7 @@ h1{
 .profile-picture{
   max-width: 80%;
   height: auto;
+  border-radius: 20px;
 }
 
 .text-background{
@@ -80,8 +81,9 @@ h1{
     max-width: 100%;
     transform: scale(1.5);
     transform-origin: top;
-    padding-top: 20px;
+    margin-top: 20px;
     margin-left: 200px;
+    border-radius: 20px;
   }
 
   .about-content{
