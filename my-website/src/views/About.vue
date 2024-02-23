@@ -12,10 +12,10 @@
       <p>I'm Alex Agosto, a Puerto Rican software engineering student expecting to graduate in December 2024.
         I'm actively looking for internship and full time opportunities to further my
         skills and learn how to apply abilities learnt in projects and jobs to new workforce areas.
-        I hold a passion in backend and game development; and have tried my hand in machine learning and frontend recently,
+        I hold a passion in database and game development; and I have tried my hand in machine learning and web-apps,
         leading to new interests.</p>
       <p>Some of my other hobbies include playing instruments, learning languages (currently learning german), and painting.
-        I've provided a couple of my most recent paintings in the "More!" section, feel free to check it out!</p>
+        I've provided a couple of my most recent paintings in the "More!" section, feel free to check it out and let me know what you think by sending me an email!</p>
       </div>
     </div>
   </div>
@@ -40,14 +40,17 @@ h1{
 
 .about-content p {
   margin-bottom: 25px; /* Adds space below each paragraph */
-  justify-content: left;
+  justify-content: center;
 }
 
 .about-content{
-  text-align: justify;
+  text-align: start;
   font: 15px "Fira Sans", sans-serif;
 }
 
+.about-content h1{
+  text-align: center;
+}
 .profile-picture{
   max-width: 80%;
   height: auto;
